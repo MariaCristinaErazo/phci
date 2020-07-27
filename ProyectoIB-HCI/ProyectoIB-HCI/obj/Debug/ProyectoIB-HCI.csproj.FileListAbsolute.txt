@@ -1,0 +1,12 @@
+C:\Users\María Cristina Erazo\source\repos\ProyectoIB-HCI\ProyectoIB-HCI\bin\Debug\ProyectoIB-HCI.exe.config
+C:\Users\María Cristina Erazo\source\repos\ProyectoIB-HCI\ProyectoIB-HCI\bin\Debug\ProyectoIB-HCI.exe
+C:\Users\María Cristina Erazo\source\repos\ProyectoIB-HCI\ProyectoIB-HCI\bin\Debug\ProyectoIB-HCI.pdb
+C:\Users\María Cristina Erazo\source\repos\ProyectoIB-HCI\ProyectoIB-HCI\obj\Debug\ProyectoIB-HCI.csprojAssemblyReference.cache
+C:\Users\María Cristina Erazo\source\repos\ProyectoIB-HCI\ProyectoIB-HCI\obj\Debug\ProyectoIB_HCI.Form1.resources
+C:\Users\María Cristina Erazo\source\repos\ProyectoIB-HCI\ProyectoIB-HCI\obj\Debug\ProyectoIB_HCI.Properties.Resources.resources
+C:\Users\María Cristina Erazo\source\repos\ProyectoIB-HCI\ProyectoIB-HCI\obj\Debug\ProyectoIB-HCI.csproj.GenerateResource.cache
+C:\Users\María Cristina Erazo\source\repos\ProyectoIB-HCI\ProyectoIB-HCI\obj\Debug\ProyectoIB-HCI.exe
+C:\Users\María Cristina Erazo\source\repos\ProyectoIB-HCI\ProyectoIB-HCI\obj\Debug\ProyectoIB-HCI.pdb
+C:\Users\María Cristina Erazo\source\repos\ProyectoIB-HCI\ProyectoIB-HCI\obj\Debug\ProyectoIB_HCI.Form2.resources
+C:\Users\María Cristina Erazo\source\repos\ProyectoIB-HCI\ProyectoIB-HCI\obj\Debug\ProyectoIB_HCI.Form3.resources
+C:\Users\María Cristina Erazo\source\repos\ProyectoIB-HCI\ProyectoIB-HCI\obj\Debug\ProyectoIB_HCI.Form4.resources
