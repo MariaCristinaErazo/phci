@@ -8,16 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Collections;
 using System.Windows.Forms;
+using System.Security.Cryptography.X509Certificates;
 
 namespace ProyectoIB_HCI
 {
     public partial class Form1 : Form
     {
+        ArrayList usuarios;
+        ArrayList contrasenias;
         public Form1()
         {
-            InitializeComponent();
-            ArrayList usuarios = new ArrayList();
-            ArrayList contrasenias = new ArrayList();
+                       InitializeComponent();
+            usuarios = new ArrayList();
+            contrasenias = new ArrayList();
             usuarios.Add("Edwin");
             contrasenias.Add("123");
             usuarios.Add("Maria Cristina");
@@ -56,14 +59,26 @@ namespace ProyectoIB_HCI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            foreach(var usr in usuarios)
+            Boolean banderaU = false;
+            Boolean banderaC = false;
+            foreach (var usr in usuarios)
             {
-                if (usr == usuario.Text)
+                if (usr.ToString() == usuario.Text)
+                    banderaU = true;
             }
-            
-            Form2 principal = new Form2();
-            this.Hide();
-            principal.Show();
+            foreach (var contr in contrasenias)
+            {
+                if (contr.ToString() == contrasena.Text)
+                    banderaC = true;
+            }
+            if (banderaC && banderaU)
+            {
+                Form2 principal = new Form2();
+                this.Hide();
+                principal.Show();
+            }
+            else
+                MessageBox.Show("El usuario no existe o contraseña es incorrecta", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

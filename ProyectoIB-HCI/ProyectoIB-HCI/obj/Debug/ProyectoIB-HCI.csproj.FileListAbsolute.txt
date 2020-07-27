@@ -10,3 +10,13 @@ C:\Users\María Cristina Erazo\source\repos\ProyectoIB-HCI\ProyectoIB-HCI\obj\De
 C:\Users\María Cristina Erazo\source\repos\ProyectoIB-HCI\ProyectoIB-HCI\obj\Debug\ProyectoIB_HCI.Form2.resources
 C:\Users\María Cristina Erazo\source\repos\ProyectoIB-HCI\ProyectoIB-HCI\obj\Debug\ProyectoIB_HCI.Form3.resources
 C:\Users\María Cristina Erazo\source\repos\ProyectoIB-HCI\ProyectoIB-HCI\obj\Debug\ProyectoIB_HCI.Form4.resources
+C:\Users\User\Source\Repos\phci\ProyectoIB-HCI\ProyectoIB-HCI\obj\Debug\ProyectoIB-HCI.csprojAssemblyReference.cache
+C:\Users\User\Source\Repos\phci\ProyectoIB-HCI\ProyectoIB-HCI\obj\Debug\ProyectoIB_HCI.Form1.resources
+C:\Users\User\Source\Repos\phci\ProyectoIB-HCI\ProyectoIB-HCI\obj\Debug\ProyectoIB_HCI.Form2.resources
+C:\Users\User\Source\Repos\phci\ProyectoIB-HCI\ProyectoIB-HCI\obj\Debug\ProyectoIB_HCI.Form3.resources
+C:\Users\User\Source\Repos\phci\ProyectoIB-HCI\ProyectoIB-HCI\obj\Debug\ProyectoIB_HCI.Form4.resources
+C:\Users\User\Source\Repos\phci\ProyectoIB-HCI\ProyectoIB-HCI\obj\Debug\ProyectoIB_HCI.Properties.Resources.resources
+C:\Users\User\Source\Repos\phci\ProyectoIB-HCI\ProyectoIB-HCI\obj\Debug\ProyectoIB-HCI.csproj.GenerateResource.cache
+C:\Users\User\Source\Repos\phci\ProyectoIB-HCI\ProyectoIB-HCI\obj\Debug\ProyectoIB-HCI.csproj.CoreCompileInputs.cache
+C:\Users\User\Source\Repos\phci\ProyectoIB-HCI\ProyectoIB-HCI\obj\Debug\ProyectoIB-HCI.exe
+C:\Users\User\Source\Repos\phci\ProyectoIB-HCI\ProyectoIB-HCI\obj\Debug\ProyectoIB-HCI.pdb
