@@ -8,91 +8,54 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Collections;
 using System.Windows.Forms;
+using System.Security.Cryptography.X509Certificates;
 
 namespace ProyectoIB_HCI
 {
     public partial class Form1 : Form
     {
+        ArrayList usuarios;
+        ArrayList contrasenias;
         public Form1()
         {
-            InitializeComponent();
-            ArrayList usuarios = new ArrayList();
-            ArrayList contrasenias = new ArrayList();
+                       InitializeComponent();
+            usuarios = new ArrayList();
+            contrasenias = new ArrayList();
             usuarios.Add("Edwin");
             contrasenias.Add("123");
             usuarios.Add("Maria Cristina");
             contrasenias.Add("m123");
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
-        {
-            nuevacuenta.Visible = true;
-            login.Visible = false;
-        }
-
-        private void label3_Click(object sender, EventArgs e)
         {
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-        //    foreach(var usr in usuario)
+            Boolean banderaU = false;
+            Boolean banderaC = false;
+            foreach (var usr in usuarios)
             {
-        //        if (usr == usuario.Text) 
+                if (usr.ToString() == usuario.Text)
+                    banderaU = true;
             }
-            
-            Form2 principal = new Form2();
-            this.Hide();
-            principal.Show();
-        }
+            foreach (var contr in contrasenias)
+            {
+                if (contr.ToString() == contrasena.Text)
+                    banderaC = true;
+            }
+            if (banderaC && banderaU)
+            {
+                Form2 principal = new Form2();         
+                this.Hide();
+                principal.Show();
+                principal.nomUsuario.Text = usuario.Text;
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-            login.Visible = true;
-            nuevacuenta.Visible = false;
-
-                                   
-        }
-
-        private void nuevacuenta_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void usuario_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
+            }
+            else
+                MessageBox.Show("El usuario no existe o contraseña es incorrecta", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
