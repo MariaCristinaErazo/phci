@@ -231,7 +231,7 @@
             this.panel2.Location = new System.Drawing.Point(187, 10);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(475, 300);
+            this.panel2.Size = new System.Drawing.Size(472, 300);
             this.panel2.TabIndex = 1;
             // 
             // resultados
@@ -406,6 +406,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.White;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(108, 64);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -428,6 +429,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.White;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(117, 111);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
