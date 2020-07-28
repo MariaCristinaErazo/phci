@@ -18,35 +18,11 @@ namespace ProyectoIB_HCI
             resultados.Visible = false;
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void label11_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void button2_Click_1(object sender, EventArgs e)
         {
@@ -68,22 +44,12 @@ namespace ProyectoIB_HCI
         {
             System.Diagnostics.Process.Start("https://www.youtube.com/?hl=es-419");
         }
-
-        private void grafico1_Click(object sender, EventArgs e)
-        {
-
-        }
         String covid19 = "Son una gran familia de virus que causan enfermedades que van desde el resfriado común hasta enfermedades más graves";
         String cuarentena = "Aislamiento de personas o animales durante un período de tiempo no específico como método para evitar o limitar el riesgo de que se extienda una enfermedad o una plaga.";
         String pandemia = "Enfermedad epidémica que se extiende a muchos países o que ataca a casi todos los individuos de una localidad o región";
         String PAcovid = "CORONAVIRUS\n" + "SARS-CoV-2\n" + "VIRUS";
         String PAcuarentena = "AISLAMIENTO\n" + "CONFINAMIENTO\n" + "ENCIERRO";
         String PApandemia = "EPIDEMIA\n" + "PESTE\n" + "ENDEMIA";
-
-        private void definicion_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {

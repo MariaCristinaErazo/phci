@@ -27,32 +27,7 @@ namespace ProyectoIB_HCI
             contrasenias.Add("m123");
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
         {
 
         }
@@ -74,8 +49,11 @@ namespace ProyectoIB_HCI
             if (banderaC && banderaU)
             {
                 Form2 principal = new Form2();
+                Form4 conf = new Form4();
                 this.Hide();
                 principal.Show();
+                conf.textBox1.Text = usuario.Text;
+
             }
             else
                 MessageBox.Show("El usuario no existe o contraseña es incorrecta", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
