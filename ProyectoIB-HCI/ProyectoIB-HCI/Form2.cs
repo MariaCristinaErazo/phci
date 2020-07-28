@@ -64,7 +64,7 @@ namespace ProyectoIB_HCI
                 Image covid1 = Image.FromFile("coronavirus.png");
                 Image covid2 = Image.FromFile("coronavirus1.png");
                 grafico1.BackgroundImage = covid1;
-                grafico1.BackgroundImage = covid2;
+                grafico2.BackgroundImage = covid2;
             }
             else if (filtrar.Text.ToLower() == "cuarentena")
             {
@@ -74,7 +74,7 @@ namespace ProyectoIB_HCI
                 Image cuarentena1 = Image.FromFile("cuarentena.png");
                 Image cuarentena2 = Image.FromFile("cuarentena1.png");
                 grafico1.BackgroundImage = cuarentena1;
-                grafico1.BackgroundImage = cuarentena2;
+                grafico2.BackgroundImage = cuarentena2;
   
             }
             else if (filtrar.Text.ToLower() == "pandemia")
@@ -108,6 +108,15 @@ namespace ProyectoIB_HCI
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Form4 perfil = new Form4();
+            this.Hide();
+            perfil.textBox1.Text = nomUsuario.Text;
+            perfil.textBox1.Enabled = false;
+            perfil.Show();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
         {
             Form4 perfil = new Form4();
             this.Hide();

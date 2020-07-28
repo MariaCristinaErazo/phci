@@ -18,18 +18,23 @@ namespace ProyectoIB_HCI
         ArrayList contrasenias;
         public Form1()
         {
-                       InitializeComponent();
+            InitializeComponent();
+            nuevaC.Visible = false;
+            tbNC.Visible = false;
+            bRegistrar2.Visible = false;
+            pbNC.Visible = false;
             usuarios = new ArrayList();
             contrasenias = new ArrayList();
             usuarios.Add("Edwin");
             contrasenias.Add("123");
             usuarios.Add("Maria Cristina");
             contrasenias.Add("m123");
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
+            /*
+            Form2 principal = new Form2();
+            this.Hide();
+            principal.Show();
+            principal.nomUsuario.Text = usuario.Text;
+            */
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -56,6 +61,23 @@ namespace ProyectoIB_HCI
             }
             else
                 MessageBox.Show("El usuario no existe o contraseña es incorrecta", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void bRegistrar1_Click(object sender, EventArgs e)
+        {
+            nuevaC.Visible = true;
+            tbNC.Visible = true;
+            bRegistrar1.Visible = false;
+            bRegistrar2.Visible = true;
+            label3.Visible = false;
+            button1.Visible = false;
+            pbNC.Visible = true;
+        }
+
+        private void bRegistrar2_Click(object sender, EventArgs e)
+        {
+            usuarios.Add(usuario.Text.ToString());
+            contrasenias.Add(contrasena.Text.ToString());
         }
     }
 }
