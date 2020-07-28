@@ -68,6 +68,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
+            this.nomUsuario = new System.Windows.Forms.TextBox();
             this.entrada.SuspendLayout();
             this.panel2.SuspendLayout();
             this.resultados.SuspendLayout();
@@ -226,6 +227,7 @@
             // 
             // resultados
             // 
+            this.resultados.Controls.Add(this.nomUsuario);
             this.resultados.Controls.Add(this.pictureBox2);
             this.resultados.Controls.Add(this.pictureBox1);
             this.resultados.Controls.Add(this.label16);
@@ -290,6 +292,7 @@
             // 
             // grafico2
             // 
+            this.grafico2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.grafico2.Location = new System.Drawing.Point(256, 190);
             this.grafico2.Margin = new System.Windows.Forms.Padding(2);
             this.grafico2.Name = "grafico2";
@@ -299,6 +302,7 @@
             // 
             // grafico1
             // 
+            this.grafico1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.grafico1.Location = new System.Drawing.Point(50, 190);
             this.grafico1.Margin = new System.Windows.Forms.Padding(2);
             this.grafico1.Name = "grafico1";
@@ -535,6 +539,14 @@
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
+            // nomUsuario
+            // 
+            this.nomUsuario.Location = new System.Drawing.Point(3, 3);
+            this.nomUsuario.Name = "nomUsuario";
+            this.nomUsuario.Size = new System.Drawing.Size(100, 20);
+            this.nomUsuario.TabIndex = 11;
+            this.nomUsuario.Visible = false;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -605,5 +617,6 @@
         private System.Windows.Forms.PictureBox grafico1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.TextBox nomUsuario;
     }
 }

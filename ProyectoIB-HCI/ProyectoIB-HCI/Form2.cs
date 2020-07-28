@@ -60,48 +60,41 @@ namespace ProyectoIB_HCI
             {
                 definicion.Text = covid19;
                 palabras.Text = PAcovid;
-                /*
-                Image covid1 = Image.FromFile("");
-                Image covid2 = Image.FromFile("");
-                grafico1.Image = covid1;
-                grafcio2.Image = covid2;
-                */
 
-
+                Image covid1 = Image.FromFile("coronavirus.png");
+                Image covid2 = Image.FromFile("coronavirus1.png");
+                grafico1.BackgroundImage = covid1;
+                grafico1.BackgroundImage = covid2;
             }
             else if (filtrar.Text.ToLower() == "cuarentena")
             {
                 definicion.Text = cuarentena;
                 palabras.Text = PAcuarentena;
-                /*
-                Image cuarentena1 = Image.FromFile("");
-                Image cuarentena2 = Image.FromFile("");
-                grafico1.Image = cuarentena1;
-                grafcio2.Image = cuarentena2;
-                */
+             
+                Image cuarentena1 = Image.FromFile("cuarentena.png");
+                Image cuarentena2 = Image.FromFile("cuarentena1.png");
+                grafico1.BackgroundImage = cuarentena1;
+                grafico1.BackgroundImage = cuarentena2;
+  
             }
             else if (filtrar.Text.ToLower() == "pandemia")
             {
                 definicion.Text = pandemia;
                 palabras.Text = PApandemia;
-                /*
-                Image pandemia1 = Image.FromFile("");
-                Image pandemia2 = Image.FromFile("");
-                grafico1.Image = pandemia1;
-                grafcio2.Image = pandemia2;
-                */
+
+                Image pandemia1 = Image.FromFile("pandemia.png");
+                Image pandemia2 = Image.FromFile("insolation.png");
+                grafico1.BackgroundImage = pandemia1;
+                grafico2.BackgroundImage = pandemia2;
             }
             else
-            {
-               
-                MessageBox.Show("No se encontraron resultados", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            {               
                 inicio.Visible = true;
                 resultados.Visible = false;
                 entrada.Enabled = true;
                 filtrar.Text = "";
+                MessageBox.Show("No se encontraron resultados", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-
-
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -116,9 +109,10 @@ namespace ProyectoIB_HCI
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
             Form4 perfil = new Form4();
             this.Hide();
+            perfil.textBox1.Text = nomUsuario.Text;
+            perfil.textBox1.Enabled = false;
             perfil.Show();
         }
     }

@@ -48,11 +48,10 @@ namespace ProyectoIB_HCI
             }
             if (banderaC && banderaU)
             {
-                Form2 principal = new Form2();
-                Form4 conf = new Form4();
+                Form2 principal = new Form2();         
                 this.Hide();
                 principal.Show();
-                conf.textBox1.Text = usuario.Text;
+                principal.nomUsuario.Text = usuario.Text;
 
             }
             else
