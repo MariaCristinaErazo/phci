@@ -18,11 +18,35 @@ namespace ProyectoIB_HCI
             resultados.Visible = false;
         }
 
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void label11_Click(object sender, EventArgs e)
         {
 
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
 
         private void button2_Click_1(object sender, EventArgs e)
         {
@@ -44,12 +68,22 @@ namespace ProyectoIB_HCI
         {
             System.Diagnostics.Process.Start("https://www.youtube.com/?hl=es-419");
         }
+
+        private void grafico1_Click(object sender, EventArgs e)
+        {
+
+        }
         String covid19 = "Son una gran familia de virus que causan enfermedades que van desde el resfriado común hasta enfermedades más graves";
         String cuarentena = "Aislamiento de personas o animales durante un período de tiempo no específico como método para evitar o limitar el riesgo de que se extienda una enfermedad o una plaga.";
         String pandemia = "Enfermedad epidémica que se extiende a muchos países o que ataca a casi todos los individuos de una localidad o región";
         String PAcovid = "CORONAVIRUS\n" + "SARS-CoV-2\n" + "VIRUS";
         String PAcuarentena = "AISLAMIENTO\n" + "CONFINAMIENTO\n" + "ENCIERRO";
         String PApandemia = "EPIDEMIA\n" + "PESTE\n" + "ENDEMIA";
+
+        private void definicion_TextChanged(object sender, EventArgs e)
+        {
+
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -60,41 +94,48 @@ namespace ProyectoIB_HCI
             {
                 definicion.Text = covid19;
                 palabras.Text = PAcovid;
+                /*
+                Image covid1 = Image.FromFile("");
+                Image covid2 = Image.FromFile("");
+                grafico1.Image = covid1;
+                grafcio2.Image = covid2;
+                */
 
-                Image covid1 = Image.FromFile("coronavirus.png");
-                Image covid2 = Image.FromFile("coronavirus1.png");
-                grafico1.BackgroundImage = covid1;
-                grafico1.BackgroundImage = covid2;
+
             }
             else if (filtrar.Text.ToLower() == "cuarentena")
             {
                 definicion.Text = cuarentena;
                 palabras.Text = PAcuarentena;
-             
-                Image cuarentena1 = Image.FromFile("cuarentena.png");
-                Image cuarentena2 = Image.FromFile("cuarentena1.png");
-                grafico1.BackgroundImage = cuarentena1;
-                grafico1.BackgroundImage = cuarentena2;
-  
+                /*
+                Image cuarentena1 = Image.FromFile("");
+                Image cuarentena2 = Image.FromFile("");
+                grafico1.Image = cuarentena1;
+                grafcio2.Image = cuarentena2;
+                */
             }
             else if (filtrar.Text.ToLower() == "pandemia")
             {
                 definicion.Text = pandemia;
                 palabras.Text = PApandemia;
-
-                Image pandemia1 = Image.FromFile("pandemia.png");
-                Image pandemia2 = Image.FromFile("insolation.png");
-                grafico1.BackgroundImage = pandemia1;
-                grafico2.BackgroundImage = pandemia2;
+                /*
+                Image pandemia1 = Image.FromFile("");
+                Image pandemia2 = Image.FromFile("");
+                grafico1.Image = pandemia1;
+                grafcio2.Image = pandemia2;
+                */
             }
             else
-            {               
+            {
+               
+                MessageBox.Show("No se encontraron resultados", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 inicio.Visible = true;
                 resultados.Visible = false;
                 entrada.Enabled = true;
                 filtrar.Text = "";
-                MessageBox.Show("No se encontraron resultados", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+
+
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -109,11 +150,15 @@ namespace ProyectoIB_HCI
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+
             Form4 perfil = new Form4();
             this.Hide();
-            perfil.textBox1.Text = nomUsuario.Text;
-            perfil.textBox1.Enabled = false;
             perfil.Show();
+        }
+
+        private void filtrar_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
