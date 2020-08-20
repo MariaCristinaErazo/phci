@@ -16,6 +16,9 @@ namespace ProyectoIB_HCI
         {
             InitializeComponent();
             resultados.Visible = false;
+            resultados.Location = new Point(0, 0);
+            cancelarCC.Location = new Point(0, 0);
+            CabiarContra.Visible = false;
         }
 
         private void label11_Click(object sender, EventArgs e)
@@ -54,6 +57,7 @@ namespace ProyectoIB_HCI
         private void button1_Click(object sender, EventArgs e)
         {
             inicio.Visible = false;
+            CabiarContra.Visible = false;
             resultados.Visible = true;
             entrada.Enabled = false;
             if (filtrar.Text.ToLower() == "covid19")
@@ -90,6 +94,7 @@ namespace ProyectoIB_HCI
             else
             {               
                 inicio.Visible = true;
+                CabiarContra.Visible = false;
                 resultados.Visible = false;
                 entrada.Enabled = true;
                 filtrar.Text = "";
@@ -100,6 +105,7 @@ namespace ProyectoIB_HCI
         private void button8_Click(object sender, EventArgs e)
         {
             entrada.Enabled = true;
+            CabiarContra.Visible = false;
             inicio.Visible = true;
             resultados.Visible =false;
             definicion.Text = "";
@@ -109,20 +115,52 @@ namespace ProyectoIB_HCI
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Form4 perfil = new Form4();
-            this.Hide();
-            perfil.textBox1.Text = nomUsuario.Text;
-            perfil.textBox1.Enabled = false;
-            perfil.Show();
+            inicio.Visible = false;
+            resultados.Visible = false;
+            entrada.Enabled = false;
+            CabiarContra.Visible = true;
+            usuarioCC.Text = nomUsuario.Text;
+            usuarioCC.Enabled = false;
+            
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            Form4 perfil = new Form4();
-            this.Hide();
-            perfil.textBox1.Text = nomUsuario.Text;
-            perfil.textBox1.Enabled = false;
-            perfil.Show();
+            inicio.Visible = false;
+            resultados.Visible = false;
+            entrada.Enabled = false;
+            CabiarContra.Visible = true;
+            usuarioCC.Text = nomUsuario.Text;
+            usuarioCC.Enabled = false;
+
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            inicio.Visible = false;
+            resultados.Visible = false;
+            entrada.Enabled = false;
+            CabiarContra.Visible = true;
+            usuarioCC.Text = nomUsuario.Text;
+            usuarioCC.Enabled = false;
+        }
+
+        private void cancelarCC_Click(object sender, EventArgs e)
+        {
+            inicio.Visible = true;
+            resultados.Visible = false;
+            entrada.Enabled = true;
+            CabiarContra.Visible = false;
+            filtrar.Text = "";
+        }
+
+        private void guardarCC_Click(object sender, EventArgs e)
+        {
+            inicio.Visible = true;
+            resultados.Visible = false;
+            entrada.Enabled = true;
+            CabiarContra.Visible = false;
+            filtrar.Text = "";
         }
     }
 }

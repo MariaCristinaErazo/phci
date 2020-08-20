@@ -19,10 +19,7 @@ namespace ProyectoIB_HCI
         public Form1()
         {
             InitializeComponent();
-            nuevaC.Visible = false;
-            tbNC.Visible = false;
-            bRegistrar2.Visible = false;
-            pbNC.Visible = false;
+            registro.Visible = false;
             usuarios = new ArrayList();
             contrasenias = new ArrayList();
             usuarios.Add("Edwin");
@@ -65,19 +62,17 @@ namespace ProyectoIB_HCI
 
         private void bRegistrar1_Click(object sender, EventArgs e)
         {
-            nuevaC.Visible = true;
-            tbNC.Visible = true;
-            bRegistrar1.Visible = false;
-            bRegistrar2.Visible = true;
-            label3.Visible = false;
-            button1.Visible = false;
-            pbNC.Visible = true;
+            registro.Visible = true;
+            inicioSesion.Visible = false;
+
         }
 
         private void bRegistrar2_Click(object sender, EventArgs e)
         {
             usuarios.Add(usuario.Text.ToString());
             contrasenias.Add(contrasena.Text.ToString());
+            registro.Visible = false;
+            inicioSesion.Visible = true;
         }
     }
 }
