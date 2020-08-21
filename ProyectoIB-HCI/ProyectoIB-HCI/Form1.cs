@@ -64,6 +64,7 @@ namespace ProyectoIB_HCI
         {
             registro.Visible = true;
             inicioSesion.Visible = false;
+            //
 
         }
 
